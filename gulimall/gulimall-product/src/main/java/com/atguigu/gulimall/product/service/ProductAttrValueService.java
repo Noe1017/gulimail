@@ -1,6 +1,6 @@
-package com.atguigu.product.service;
+package com.atguigu.gulimall.product.service;
 
-import com.atguigu.product.entity.ProductAttrValueEntity;
+import com.atguigu.gulimall.product.entity.ProductAttrValueEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.atguigu.common.utils.PageUtils;
 

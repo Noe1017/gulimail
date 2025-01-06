@@ -1,4 +1,4 @@
-package com.atguigu.product.controller;
+package com.atguigu.gulimall.product.controller;
 
 import java.util.Arrays;
 import java.util.Map;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.atguigu.product.entity.CategoryEntity;
-import com.atguigu.product.service.CategoryService;
+import com.atguigu.gulimall.product.entity.CategoryEntity;
+import com.atguigu.gulimall.product.service.CategoryService;
 import com.atguigu.common.utils.PageUtils;
 import com.atguigu.common.utils.R;
 

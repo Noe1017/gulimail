@@ -1,8 +1,8 @@
-package com.atguigu.product.service.impl;
+package com.atguigu.gulimall.product.service.impl;
 
-import com.atguigu.product.dao.SpuInfoDescDao;
-import com.atguigu.product.entity.SpuInfoDescEntity;
-import com.atguigu.product.service.SpuInfoDescService;
+import com.atguigu.gulimall.product.dao.SpuInfoDescDao;
+import com.atguigu.gulimall.product.entity.SpuInfoDescEntity;
+import com.atguigu.gulimall.product.service.SpuInfoDescService;
 import org.springframework.stereotype.Service;
 import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;

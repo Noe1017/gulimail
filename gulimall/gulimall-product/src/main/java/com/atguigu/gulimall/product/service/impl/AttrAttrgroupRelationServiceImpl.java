@@ -1,8 +1,8 @@
-package com.atguigu.product.service.impl;
+package com.atguigu.gulimall.product.service.impl;
 
-import com.atguigu.product.dao.AttrAttrgroupRelationDao;
-import com.atguigu.product.entity.AttrAttrgroupRelationEntity;
-import com.atguigu.product.service.AttrAttrgroupRelationService;
+import com.atguigu.gulimall.product.dao.AttrAttrgroupRelationDao;
+import com.atguigu.gulimall.product.entity.AttrAttrgroupRelationEntity;
+import com.atguigu.gulimall.product.service.AttrAttrgroupRelationService;
 import org.springframework.stereotype.Service;
 import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;

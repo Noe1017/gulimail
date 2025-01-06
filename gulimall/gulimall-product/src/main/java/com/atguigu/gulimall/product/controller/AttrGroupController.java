@@ -1,11 +1,11 @@
-package com.atguigu.product.controller;
+package com.atguigu.gulimall.product.controller;
 
 import java.util.Arrays;
 import java.util.Map;
 
 
-import com.atguigu.product.entity.AttrGroupEntity;
-import com.atguigu.product.service.AttrGroupService;
+import com.atguigu.gulimall.product.entity.AttrGroupEntity;
+import com.atguigu.gulimall.product.service.AttrGroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;

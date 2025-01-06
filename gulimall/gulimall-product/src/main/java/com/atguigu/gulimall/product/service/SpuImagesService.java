@@ -1,6 +1,6 @@
-package com.atguigu.product.service;
+package com.atguigu.gulimall.product.service;
 
-import com.atguigu.product.entity.SpuImagesEntity;
+import com.atguigu.gulimall.product.entity.SpuImagesEntity;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.atguigu.common.utils.PageUtils;
 

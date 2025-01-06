@@ -1,8 +1,8 @@
-package com.atguigu.product.service.impl;
+package com.atguigu.gulimall.product.service.impl;
 
-import com.atguigu.product.dao.CategoryDao;
-import com.atguigu.product.entity.CategoryEntity;
-import com.atguigu.product.service.CategoryService;
+import com.atguigu.gulimall.product.dao.CategoryDao;
+import com.atguigu.gulimall.product.entity.CategoryEntity;
+import com.atguigu.gulimall.product.service.CategoryService;
 import org.springframework.stereotype.Service;
 import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
