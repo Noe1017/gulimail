@@ -3,6 +3,7 @@ package com.atguigu.gulimall.coupon.dao;
 import com.atguigu.gulimall.coupon.entity.CouponEntity;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 /**
  * 优惠券信息
@@ -12,6 +13,7 @@ import org.apache.ibatis.annotations.Mapper;
  * @date 2025-01-06 22:09:52
  */
 @Mapper
+@Repository
 public interface CouponDao extends BaseMapper<CouponEntity> {
 	
 }
