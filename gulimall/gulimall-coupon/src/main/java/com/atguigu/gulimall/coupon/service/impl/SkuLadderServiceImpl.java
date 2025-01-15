@@ -1,7 +1,5 @@
 package com.atguigu.gulimall.coupon.service.impl;
 
-import com.atguigu.gulimall.coupon.entity.SkuLadderEntity;
-import com.atguigu.gulimall.coupon.service.SkuLadderService;
 import org.springframework.stereotype.Service;
 import java.util.Map;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -11,6 +9,8 @@ import com.atguigu.common.utils.PageUtils;
 import com.atguigu.common.utils.Query;
 
 import com.atguigu.gulimall.coupon.dao.SkuLadderDao;
+import com.atguigu.gulimall.coupon.entity.SkuLadderEntity;
+import com.atguigu.gulimall.coupon.service.SkuLadderService;
 
 
 @Service("skuLadderService")
