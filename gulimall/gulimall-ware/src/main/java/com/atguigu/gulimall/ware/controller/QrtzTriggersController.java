@@ -23,7 +23,7 @@ import com.atguigu.common.utils.R;
  *
  * @author Noe1017
  * @email jixiangli1017@gmail.com
- * @date 2025-01-18 23:28:01
+ * @date 2025-01-19 17:32:28
  */
 @RestController
 @RequestMapping("ware/qrtztriggers")
