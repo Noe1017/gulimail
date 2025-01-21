@@ -3,7 +3,6 @@ package com.atguigu.gulimall.order.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,7 +22,7 @@ import com.atguigu.common.utils.R;
  *
  * @author Noe1017
  * @email jixiangli1017@gmail.com
- * @date 2025-01-18 23:18:33
+ * @date 2025-01-21 22:53:26
  */
 @RestController
 @RequestMapping("order/paymentinfo")
@@ -35,7 +34,7 @@ public class PaymentInfoController {
      * 列表
      */
     @RequestMapping("/list")
-    @RequiresPermissions("order:paymentinfo:list")
+  //  @RequiresPermissions("order:paymentinfo:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = paymentInfoService.queryPage(params);
 
@@ -47,7 +46,7 @@ public class PaymentInfoController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    @RequiresPermissions("order:paymentinfo:info")
+ //   @RequiresPermissions("order:paymentinfo:info")
     public R info(@PathVariable("id") Long id){
 		PaymentInfoEntity paymentInfo = paymentInfoService.getById(id);
 
@@ -58,7 +57,7 @@ public class PaymentInfoController {
      * 保存
      */
     @RequestMapping("/save")
-    @RequiresPermissions("order:paymentinfo:save")
+ //   @RequiresPermissions("order:paymentinfo:save")
     public R save(@RequestBody PaymentInfoEntity paymentInfo){
 		paymentInfoService.save(paymentInfo);
 
@@ -69,7 +68,7 @@ public class PaymentInfoController {
      * 修改
      */
     @RequestMapping("/update")
-    @RequiresPermissions("order:paymentinfo:update")
+  //  @RequiresPermissions("order:paymentinfo:update")
     public R update(@RequestBody PaymentInfoEntity paymentInfo){
 		paymentInfoService.updateById(paymentInfo);
 
@@ -80,7 +79,7 @@ public class PaymentInfoController {
      * 删除
      */
     @RequestMapping("/delete")
-    @RequiresPermissions("order:paymentinfo:delete")
+ //   @RequiresPermissions("order:paymentinfo:delete")
     public R delete(@RequestBody Long[] ids){
 		paymentInfoService.removeByIds(Arrays.asList(ids));
 

@@ -3,7 +3,6 @@ package com.atguigu.gulimall.ware.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,7 +22,7 @@ import com.atguigu.common.utils.R;
  *
  * @author Noe1017
  * @email jixiangli1017@gmail.com
- * @date 2025-01-19 17:32:28
+ * @date 2025-01-21 22:44:18
  */
 @RestController
 @RequestMapping("ware/wareinfo")
@@ -35,7 +34,7 @@ public class WareInfoController {
      * 列表
      */
     @RequestMapping("/list")
-    @RequiresPermissions("ware:wareinfo:list")
+  //  @RequiresPermissions("ware:wareinfo:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = wareInfoService.queryPage(params);
 
@@ -47,7 +46,7 @@ public class WareInfoController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    @RequiresPermissions("ware:wareinfo:info")
+ //   @RequiresPermissions("ware:wareinfo:info")
     public R info(@PathVariable("id") Long id){
 		WareInfoEntity wareInfo = wareInfoService.getById(id);
 
@@ -58,7 +57,7 @@ public class WareInfoController {
      * 保存
      */
     @RequestMapping("/save")
-    @RequiresPermissions("ware:wareinfo:save")
+ //   @RequiresPermissions("ware:wareinfo:save")
     public R save(@RequestBody WareInfoEntity wareInfo){
 		wareInfoService.save(wareInfo);
 
@@ -69,7 +68,7 @@ public class WareInfoController {
      * 修改
      */
     @RequestMapping("/update")
-    @RequiresPermissions("ware:wareinfo:update")
+  //  @RequiresPermissions("ware:wareinfo:update")
     public R update(@RequestBody WareInfoEntity wareInfo){
 		wareInfoService.updateById(wareInfo);
 
@@ -80,7 +79,7 @@ public class WareInfoController {
      * 删除
      */
     @RequestMapping("/delete")
-    @RequiresPermissions("ware:wareinfo:delete")
+ //   @RequiresPermissions("ware:wareinfo:delete")
     public R delete(@RequestBody Long[] ids){
 		wareInfoService.removeByIds(Arrays.asList(ids));
 

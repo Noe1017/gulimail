@@ -3,7 +3,6 @@ package com.atguigu.gulimall.order.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,7 +22,7 @@ import com.atguigu.common.utils.R;
  *
  * @author Noe1017
  * @email jixiangli1017@gmail.com
- * @date 2025-01-18 23:18:33
+ * @date 2025-01-21 22:53:26
  */
 @RestController
 @RequestMapping("order/order")
@@ -35,7 +34,7 @@ public class OrderController {
      * 列表
      */
     @RequestMapping("/list")
-    @RequiresPermissions("order:order:list")
+  //  @RequiresPermissions("order:order:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = orderService.queryPage(params);
 
@@ -47,7 +46,7 @@ public class OrderController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    @RequiresPermissions("order:order:info")
+ //   @RequiresPermissions("order:order:info")
     public R info(@PathVariable("id") Long id){
 		OrderEntity order = orderService.getById(id);
 
@@ -58,7 +57,7 @@ public class OrderController {
      * 保存
      */
     @RequestMapping("/save")
-    @RequiresPermissions("order:order:save")
+ //   @RequiresPermissions("order:order:save")
     public R save(@RequestBody OrderEntity order){
 		orderService.save(order);
 
@@ -69,7 +68,7 @@ public class OrderController {
      * 修改
      */
     @RequestMapping("/update")
-    @RequiresPermissions("order:order:update")
+  //  @RequiresPermissions("order:order:update")
     public R update(@RequestBody OrderEntity order){
 		orderService.updateById(order);
 
@@ -80,7 +79,7 @@ public class OrderController {
      * 删除
      */
     @RequestMapping("/delete")
-    @RequiresPermissions("order:order:delete")
+ //   @RequiresPermissions("order:order:delete")
     public R delete(@RequestBody Long[] ids){
 		orderService.removeByIds(Arrays.asList(ids));
 

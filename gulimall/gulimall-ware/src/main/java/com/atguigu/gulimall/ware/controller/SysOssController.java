@@ -3,7 +3,6 @@ package com.atguigu.gulimall.ware.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,7 +22,7 @@ import com.atguigu.common.utils.R;
  *
  * @author Noe1017
  * @email jixiangli1017@gmail.com
- * @date 2025-01-19 17:32:28
+ * @date 2025-01-21 22:44:18
  */
 @RestController
 @RequestMapping("ware/sysoss")
@@ -35,7 +34,7 @@ public class SysOssController {
      * 列表
      */
     @RequestMapping("/list")
-    @RequiresPermissions("ware:sysoss:list")
+  //  @RequiresPermissions("ware:sysoss:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = sysOssService.queryPage(params);
 
@@ -47,7 +46,7 @@ public class SysOssController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    @RequiresPermissions("ware:sysoss:info")
+ //   @RequiresPermissions("ware:sysoss:info")
     public R info(@PathVariable("id") Long id){
 		SysOssEntity sysOss = sysOssService.getById(id);
 
@@ -58,7 +57,7 @@ public class SysOssController {
      * 保存
      */
     @RequestMapping("/save")
-    @RequiresPermissions("ware:sysoss:save")
+ //   @RequiresPermissions("ware:sysoss:save")
     public R save(@RequestBody SysOssEntity sysOss){
 		sysOssService.save(sysOss);
 
@@ -69,7 +68,7 @@ public class SysOssController {
      * 修改
      */
     @RequestMapping("/update")
-    @RequiresPermissions("ware:sysoss:update")
+  //  @RequiresPermissions("ware:sysoss:update")
     public R update(@RequestBody SysOssEntity sysOss){
 		sysOssService.updateById(sysOss);
 
@@ -80,7 +79,7 @@ public class SysOssController {
      * 删除
      */
     @RequestMapping("/delete")
-    @RequiresPermissions("ware:sysoss:delete")
+ //   @RequiresPermissions("ware:sysoss:delete")
     public R delete(@RequestBody Long[] ids){
 		sysOssService.removeByIds(Arrays.asList(ids));
 

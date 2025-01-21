@@ -42,6 +42,7 @@ com/atguigu/gulimall/coupon/controller/SeckillSkuRelationController.class
 com/atguigu/gulimall/coupon/dao/CouponSpuCategoryRelationDao.class
 com/atguigu/gulimall/coupon/service/impl/HomeAdvServiceImpl.class
 com/atguigu/gulimall/coupon/service/CouponHistoryService.class
+com/atguigu/gulimall/coupon/GulimallCouponApplication.class
 com/atguigu/gulimall/coupon/controller/SkuFullReductionController.class
 com/atguigu/gulimall/coupon/service/impl/SkuFullReductionServiceImpl.class
 com/atguigu/gulimall/coupon/entity/SeckillSessionEntity.class

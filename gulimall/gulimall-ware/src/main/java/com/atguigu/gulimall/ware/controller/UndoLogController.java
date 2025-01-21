@@ -3,7 +3,6 @@ package com.atguigu.gulimall.ware.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,7 +22,7 @@ import com.atguigu.common.utils.R;
  *
  * @author Noe1017
  * @email jixiangli1017@gmail.com
- * @date 2025-01-19 17:32:28
+ * @date 2025-01-21 22:44:18
  */
 @RestController
 @RequestMapping("ware/undolog")
@@ -35,7 +34,7 @@ public class UndoLogController {
      * 列表
      */
     @RequestMapping("/list")
-    @RequiresPermissions("ware:undolog:list")
+  //  @RequiresPermissions("ware:undolog:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = undoLogService.queryPage(params);
 
@@ -47,7 +46,7 @@ public class UndoLogController {
      * 信息
      */
     @RequestMapping("/info/{id}")
-    @RequiresPermissions("ware:undolog:info")
+ //   @RequiresPermissions("ware:undolog:info")
     public R info(@PathVariable("id") Long id){
 		UndoLogEntity undoLog = undoLogService.getById(id);
 
@@ -58,7 +57,7 @@ public class UndoLogController {
      * 保存
      */
     @RequestMapping("/save")
-    @RequiresPermissions("ware:undolog:save")
+ //   @RequiresPermissions("ware:undolog:save")
     public R save(@RequestBody UndoLogEntity undoLog){
 		undoLogService.save(undoLog);
 
@@ -69,7 +68,7 @@ public class UndoLogController {
      * 修改
      */
     @RequestMapping("/update")
-    @RequiresPermissions("ware:undolog:update")
+  //  @RequiresPermissions("ware:undolog:update")
     public R update(@RequestBody UndoLogEntity undoLog){
 		undoLogService.updateById(undoLog);
 
@@ -80,7 +79,7 @@ public class UndoLogController {
      * 删除
      */
     @RequestMapping("/delete")
-    @RequiresPermissions("ware:undolog:delete")
+ //   @RequiresPermissions("ware:undolog:delete")
     public R delete(@RequestBody Long[] ids){
 		undoLogService.removeByIds(Arrays.asList(ids));
 

@@ -3,7 +3,6 @@ package com.atguigu.gulimall.ware.controller;
 import java.util.Arrays;
 import java.util.Map;
 
-import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -23,7 +22,7 @@ import com.atguigu.common.utils.R;
  *
  * @author Noe1017
  * @email jixiangli1017@gmail.com
- * @date 2025-01-19 17:32:28
+ * @date 2025-01-21 22:44:18
  */
 @RestController
 @RequestMapping("ware/qrtztriggers")
@@ -35,7 +34,7 @@ public class QrtzTriggersController {
      * 列表
      */
     @RequestMapping("/list")
-    @RequiresPermissions("ware:qrtztriggers:list")
+  //  @RequiresPermissions("ware:qrtztriggers:list")
     public R list(@RequestParam Map<String, Object> params){
         PageUtils page = qrtzTriggersService.queryPage(params);
 
@@ -47,7 +46,7 @@ public class QrtzTriggersController {
      * 信息
      */
     @RequestMapping("/info/{schedName}")
-    @RequiresPermissions("ware:qrtztriggers:info")
+ //   @RequiresPermissions("ware:qrtztriggers:info")
     public R info(@PathVariable("schedName") String schedName){
 		QrtzTriggersEntity qrtzTriggers = qrtzTriggersService.getById(schedName);
 
@@ -58,7 +57,7 @@ public class QrtzTriggersController {
      * 保存
      */
     @RequestMapping("/save")
-    @RequiresPermissions("ware:qrtztriggers:save")
+ //   @RequiresPermissions("ware:qrtztriggers:save")
     public R save(@RequestBody QrtzTriggersEntity qrtzTriggers){
 		qrtzTriggersService.save(qrtzTriggers);
 
@@ -69,7 +68,7 @@ public class QrtzTriggersController {
      * 修改
      */
     @RequestMapping("/update")
-    @RequiresPermissions("ware:qrtztriggers:update")
+  //  @RequiresPermissions("ware:qrtztriggers:update")
     public R update(@RequestBody QrtzTriggersEntity qrtzTriggers){
 		qrtzTriggersService.updateById(qrtzTriggers);
 
@@ -80,7 +79,7 @@ public class QrtzTriggersController {
      * 删除
      */
     @RequestMapping("/delete")
-    @RequiresPermissions("ware:qrtztriggers:delete")
+ //   @RequiresPermissions("ware:qrtztriggers:delete")
     public R delete(@RequestBody String[] schedNames){
 		qrtzTriggersService.removeByIds(Arrays.asList(schedNames));
 
