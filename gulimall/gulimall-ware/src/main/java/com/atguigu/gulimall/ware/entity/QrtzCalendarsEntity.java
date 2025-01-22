@@ -31,6 +31,6 @@ public class QrtzCalendarsEntity implements Serializable {
 	/**
 	 * 
 	 */
-	private Blob calendar;
+	private byte [] calendar;
 
 }

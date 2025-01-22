@@ -59,6 +59,6 @@ public class QrtzJobDetailsEntity implements Serializable {
 	/**
 	 * 
 	 */
-	private Blob jobData;
+	private byte [] jobData;
 
 }

@@ -83,6 +83,6 @@ public class QrtzTriggersEntity implements Serializable {
 	/**
 	 * 
 	 */
-	private Blob jobData;
+	private byte [] jobData;
 
 }
