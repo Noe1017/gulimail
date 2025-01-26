@@ -1,10 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.atguigu.gulimall.coupon.GulimallCouponApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.34 s <<< FAILURE! - in com.atguigu.gulimall.coupon.GulimallCouponApplicationTests
-contextLoads  Time elapsed: 0 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [com.atguigu.gulimall.coupon.GulimallCouponApplication]; nested exception is org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: class path resource [org/springframework/cloud/client/serviceregistry/AutoServiceRegistrationConfiguration.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 61
-Caused by: org.springframework.core.NestedIOException: ASM ClassReader failed to parse class file - probably due to a new Java class file version that isn't supported yet: class path resource [org/springframework/cloud/client/serviceregistry/AutoServiceRegistrationConfiguration.class]; nested exception is java.lang.IllegalArgumentException: Unsupported class file major version 61
-Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 61
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.122 s - in com.atguigu.gulimall.coupon.GulimallCouponApplicationTests

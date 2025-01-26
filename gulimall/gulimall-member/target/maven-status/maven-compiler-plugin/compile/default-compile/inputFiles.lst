@@ -29,6 +29,7 @@
 /Users/zhangcun/shangou/gulimall/gulimall-member/src/main/java/com/atguigu/gulimall/member/controller/MemberLevelController.java
 /Users/zhangcun/shangou/gulimall/gulimall-member/src/main/java/com/atguigu/gulimall/member/controller/MemberStatisticsInfoController.java
 /Users/zhangcun/shangou/gulimall/gulimall-member/src/main/java/com/atguigu/gulimall/member/service/GrowthChangeHistoryService.java
+/Users/zhangcun/shangou/gulimall/gulimall-member/src/main/java/com/atguigu/gulimall/member/feign/CouponFeignService.java
 /Users/zhangcun/shangou/gulimall/gulimall-member/src/main/java/com/atguigu/gulimall/member/GulimallMemberApplication.java
 /Users/zhangcun/shangou/gulimall/gulimall-member/src/main/java/com/atguigu/gulimall/member/service/MemberService.java
 /Users/zhangcun/shangou/gulimall/gulimall-member/src/main/java/com/atguigu/gulimall/member/service/impl/MemberCollectSpuServiceImpl.java
