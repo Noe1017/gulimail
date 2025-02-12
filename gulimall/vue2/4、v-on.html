@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+       
+        <!-- 表单项，自定义组件 -->
+         <div id="app">
+            <!-- 事件中事件写js片段 -->
+             <button v-on:click="num++">点赞</button>
+             <button>取消</button>
+
+             <h1>有{{num}}个赞</h1>
+            <div style="border: 1px solid red;padding:20px;">
+                大div
+                <div style="border: 1px solid blue;padding: 20px;">
+                    小div <br/>
+                </div>
+            </div>
+
+
+            <!-- 按键修饰符 -->
+             <input type="text"><br />
+
+             提示：
+         </div>
+       <script src="./node_modules/vue/dist/vue.js"></script>
+       <script>
+            Vue.config.devtools = true;
+            new Vue({
+                el:"#app",
+                data:{
+                    num: 1
+                }
+            })
+       </script>
+    </body>
+</html>
