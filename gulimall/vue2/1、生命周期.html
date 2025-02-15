@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name=""viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id ="app">
+            <span id="num">{{num}}</span>
+            <button @click="num++">赞!</button>
+            <h2>{{name}} , 有{{num}}个人点赞</h2>
+        </div>
+    </body>
+
+    <script src="./node_modules/vue/dist/vue.js"></script>
+
+    <script>
+        let app = new Vue({
+            el: "#app",
+            data:{
+                name:"张三",
+                num: 100
+            },
+            methods:{
+                show(){
+                    return this.name;
+                },
+                add(){
+                    this.num++;
+                }
+            },
+            beforeCreate(){
+                console.log("beforeCreate");
+                console.log("数据模型未加载" + this.name, this.num);
+                console.log("方法未加载" + this.show());
+            }
+        })
+    </script>
+</html>
