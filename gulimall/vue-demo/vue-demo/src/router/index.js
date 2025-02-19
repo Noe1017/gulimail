@@ -20,7 +20,7 @@ export default new Router({
     {
       path: '/table',
       name: 'MyTable',
-      components: MyTable
+      component: MyTable
     }
   ]
 })

@@ -22,7 +22,7 @@ export default {
     };
     return {
       tableData: Array(20).fill(item)
-    }
+    };
   }
 };
 </script>
