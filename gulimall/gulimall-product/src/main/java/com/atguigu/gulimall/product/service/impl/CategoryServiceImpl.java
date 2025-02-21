@@ -36,7 +36,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         //1、查出所有分类
         List<CategoryEntity> entities = baseMapper.selectList(null);
         //2、组装成父子的树形结构
-        return null;
+        return entities;
     }
 
 }
