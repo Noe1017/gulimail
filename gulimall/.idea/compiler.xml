@@ -27,7 +27,7 @@
       <module name="gulimall-order" options="-parameters" />
       <module name="gulimall-product" options="-parameters" />
       <module name="gulimall-ware" options="-parameters" />
-      <module name="renren-fast" options="-parameters" />
+      <module name="renren-fast" options="" />
       <module name="renren-generator" options="-parameters" />
     </option>
   </component>

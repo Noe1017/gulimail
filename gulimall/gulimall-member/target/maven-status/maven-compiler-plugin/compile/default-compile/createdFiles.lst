@@ -22,6 +22,7 @@ com/atguigu/gulimall/member/entity/MemberEntity.class
 com/atguigu/gulimall/member/controller/MemberCollectSpuController.class
 com/atguigu/gulimall/member/service/MemberLoginLogService.class
 com/atguigu/gulimall/member/entity/GrowthChangeHistoryEntity.class
+com/atguigu/gulimall/member/feign/CouponFeignService.class
 com/atguigu/gulimall/member/service/GrowthChangeHistoryService.class
 com/atguigu/gulimall/member/dao/MemberCollectSpuDao.class
 com/atguigu/gulimall/member/entity/IntegrationChangeHistoryEntity.class
