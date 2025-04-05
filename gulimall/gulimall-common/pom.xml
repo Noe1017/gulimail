@@ -104,7 +104,6 @@
                     <groupId>com.fasterxml.jackson.core</groupId>
                     <artifactId>jackson-databind</artifactId>
                 </exclusion>
-                test
             </exclusions>
         </dependency>
         <dependency>
